@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: liquid07/nginx-docker-demo
+          image: liquid07/nginx-docker-demo:nginx-docker-demo
           ports:
             - containerPort: 80
           env:
