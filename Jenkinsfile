@@ -17,9 +17,9 @@ pipeline {
         steps {
                            script {
         sh 'docker version'
-        sh 'docker build -t nginx-docker-jenkins .'
+        sh 'docker build -t nginx-docker-demo .'
         sh 'docker image list'
-        sh 'docker tag nginx-docker-jenkins liquid07/nginx-docker-demo:jenkins-nginx'
+        sh 'docker tag nginx-docker-demo liquid07/nginx-docker-demo:nginx-docker-demo'
         sh 'docker images list'
                              
     stage("Docker Login"){
@@ -30,7 +30,7 @@ pipeline {
                                   }
                              
       stage("Push Image to Docker Hub"){
-        sh 'docker push  liquid07/nginx-docker-demo:jenkins-nginx'
+        sh 'docker push  liquid07/nginx-docker-demo:nginx-docker-demo'
         echo 'Push Sucess!!'
     }
                              
