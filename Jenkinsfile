@@ -30,7 +30,7 @@ pipeline {
                                   }
                              
       stage("Push Image to Docker Hub"){
-        sh 'docker push  liquid07/nginx-docker-demo:nginx-docker-demo'
+        sh 'docker push  liquid07/nginx-docker-demo:jenkins-nginx'
         echo 'Push Sucess!!'
     }
             } 
