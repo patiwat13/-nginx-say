@@ -13,7 +13,7 @@ pipeline {
     
      stage('Docker build') {
        steps {
-
+          sh 'sudo apt install docker.io'
           sh 'docker version'
           sh 'docker build -t nginx-docker-demo .'
           sh 'docker image list'
