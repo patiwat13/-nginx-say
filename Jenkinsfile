@@ -12,7 +12,7 @@ pipeline {
                        }
     
      stage('Docker build'){
-       step {
+       steps {
 
           sh 'docker version'
           sh 'docker build -t nginx-docker-demo .'
