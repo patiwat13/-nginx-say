@@ -22,12 +22,17 @@ pipeline {
         sh 'docker tag nginx-docker-jenkins liquid07/nginx-docker-demo:jenkins-nginx'
         sh 'docker images list'
                              
-   stage("Docker Login"){
+    stage("Docker Login"){
         withCredentials([string(credentialsId: 'DOCKER_HUB_PASSWORD', variable: 'PASSWORD')]) {
             sh 'docker login -u liquid07 -p $PASSWORD'
-            echo 'DOCKER LOGIN SUSCESS..'
+            echo 'DOCKER LOGIN SUCESS..'
                         }
                                   }
+                             
+      stage("Push Image to Docker Hub"){
+        sh 'docker push  liquid07/nginx-docker-demo:nginx-docker-demo'
+        echo 'Push Sucess!!'
+    }
             } 
                          }
     
