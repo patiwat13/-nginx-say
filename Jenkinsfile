@@ -30,7 +30,7 @@ pipeline {
             sh 'docker login -u liquid07 -p $PASSWORD'
             echo 'DOCKER LOGIN SUSCESS..'
         }
-     
+    }
   }
   
 }
