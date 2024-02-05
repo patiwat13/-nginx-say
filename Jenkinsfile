@@ -66,7 +66,7 @@ BAMCAqQwDwYDVR0TAQH/BAUwAwEB/zAKBggqhkjOPQQDAgNIADBFAiEA6cmHVpNu
 1oURR8FBKm46uldAVG8/iqed05X5Ob0VXXQCIDpXcbQUussfetNfmHb65hwc/2tW
 P9V/xvyOokeKAvZd
 -----END CERTIFICATE-----''', credentialsId: 'Rancher_Login', serverUrl: 'https://203.151.50.20/k8s/clusters/c-bfhk6') {
-    // some block
+ #   // some block
          #   stage('Deploy Nginx YAML File') {
          #         sh 'kubectl apply -f nginx-deployment.yaml'
          #         // sh 'kubectl get pod'
