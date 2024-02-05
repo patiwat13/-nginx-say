@@ -55,6 +55,7 @@ pipeline {
                   // sh 'kubectl get pod'
                                     }
 }
+        }
       #kubeconfig(caCertificate: '''-----BEGIN CERTIFICATE-----
 MIIBiDCCAS6gAwIBAgIBADAKBggqhkjOPQQDAjA7MRwwGgYDVQQKExNkeW5hbWlj
 bGlzdGVuZXItb3JnMRswGQYDVQQDExJkeW5hbWljbGlzdGVuZXItY2EwHhcNMjEw
