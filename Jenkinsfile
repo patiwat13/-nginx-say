@@ -36,8 +36,8 @@ pipeline {
                              
          stage("SSH Into Virtual machine Server") {
         def remote = [:]
-        remote.name = 'K8S master'
-        remote.host = '172.20.5.66'
+        remote.name = 'K8S Node2'
+        remote.host = '172.20.5.68'
         remote.user = 'patiwat'
         remote.password = 'patiwat#123'
         remote.allowAnyHosts = true
